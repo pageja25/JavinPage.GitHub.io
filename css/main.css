@@ -44,18 +44,18 @@ body{
     font-size: 20px;
     color: hsl(14, 0%, 8%);
     font-weight: 500;
-    display: flex;
+    display: inline-flex;
     flex: wrap;
 }
 .text  {
     flex: 50%;
 }
 main {
-    padding: 40px 200px 40px 200px;
+    padding: 40px 10vw 40px 10vw;
     display: block;
 }
 header{
-    width: 100vw;
+    width: 100%;
     margin: auto;
     /*position: fixed;
     box-sizing: content-box;*/
@@ -64,10 +64,10 @@ header{
     /*background-image: linear-gradient(to bottom, rgb(255, 188, 217), rgb(160, 217, 239));*/
 }
 .content {
-    padding: 40px 200px 40px 200px; 
+    padding: 2vw 10vw 2vw 10vw; 
     display: inline-block;
     vertical-align: middle;
-    width: 100vw;
+    width: inherit;
 }
 h1 {
     font-family: 'SF-Display';
@@ -106,7 +106,6 @@ nav{
     font-family: 'SF-Display';
     font-size: 18px;
     float: right;
-
 }
 .face {
     border-radius: 5%;
@@ -114,7 +113,8 @@ nav{
     box-shadow: 10px 10px 10px hsl(224, 30%, 27%, 0.1);
 }
 .image {
-    padding: 0 40px 0 40px;
+    display: flex;
+    float: right;
     width: 40%; 
 }
 .profile {
@@ -137,13 +137,14 @@ a:hover {
 }
 
 footer {
+    left: 50%;
+    margin-top: 3em;
     display: block;
-    margin-top: 100px;
+    justify-self: center;
     font-family: 'SF-Text';
     font-size: 16px;
     font-weight: 500;
     color:darkgrey;
     text-align: center;
-    left: 50%;
     position: absolute;
 }
